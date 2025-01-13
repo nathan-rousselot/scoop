@@ -11,6 +11,8 @@ To avoid any conflicts, we recommend using a virtual environment. To create a ne
 
 ```conda activate scoop_ches25```
 
+WARNING: Using `requirements.txt` assume you have a CUDA-compatible GPU with CUDA>=12.1 installed. If you do not have a GPU, or if you have a different version of CUDA, you may need to install the appropriate version of PyTorch manually.
+
 ## Usage
 
 The main contribution is located in `src/scoop.py'. To use Scoop, create an instance of the `Scoop` class as you would do with any other optimizer:
