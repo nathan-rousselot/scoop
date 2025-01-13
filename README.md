@@ -8,6 +8,7 @@ This repository contains the implementation of the Scoop algorithm for profiling
 To avoid any conflicts, we recommend using a virtual environment. To create a new virtual environment, run the following commands:
 
 ```conda create --name scoop_ches25 --file requirements.txt```
+
 ```conda activate scoop_ches25```
 
 ## Usage
@@ -22,12 +23,12 @@ The training loop is then slightly modified to include the Hessian computation a
 
 ```python
 ...
-loss = F.nll_loss(Y_pred, Y_batch)/math.log(2)
-            loss.backward(create_graph=True)
-            if iter % hessian_update == hessian_update - 1:
-                optimizer.hutchinson_hessian() # SCOOP SPECIFIC LINE
-            optimizer.step()
-            train_loss += loss.item()
+        loss = F.nll_loss(Y_pred, Y_batch)/math.log(2)
+        loss.backward(create_graph=True)
+        if iter % hessian_update == hessian_update - 1:
+            optimizer.hutchinson_hessian() # SCOOP SPECIFIC LINE
+        optimizer.step()
+        train_loss += loss.item()
 ...
 ```
 
@@ -35,7 +36,7 @@ You can explore the different notebooks in this repository for more detailed exa
 
 ## Citation
 
-If you use this code in your research, please cite the following paper:
+If you use Scoop, or this code, in your research please cite the following paper:
 
 ```bibtex
 TBD --> anonymized
