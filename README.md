@@ -23,7 +23,7 @@ At this time, SCoop has only been implemented in PyTorch. To use Scoop, one need
     from scoop import Scoop
 ```
 
-`Scoop` is a class that inherits from `torch.optim.Optimizer`. Hence, one can use it as any other optimizer in PyTorch, we detail its hyperparameters later. The main difference with standard optimizer is that Scoop relies on a Hessian estimator. Hence, `Scoop` has a `hutchinson\_hessian` method that update the Hessian estimation in-place. The entire training loop is then:
+`Scoop` is a class that inherits from `torch.optim.Optimizer`. Hence, one can use it as any other optimizer in PyTorch, we detail its hyperparameters later. The main difference with standard optimizer is that Scoop relies on a Hessian estimator. Hence, `Scoop` has a `hutchinson\_hessian` method that update the Hessian estimation in-place.
 
 The main contribution is located in `src/scoop.py`. To use Scoop, create an instance of the `Scoop` class as you would do with any other optimizer:
 
