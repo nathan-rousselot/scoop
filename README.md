@@ -11,17 +11,19 @@ To avoid any conflicts, we recommend using a virtual environment. To create a ne
 
 ```conda activate scoop_ches25```
 
-WARNING: Using `requirements.txt` assumes you have a CUDA-compatible GPU with CUDA>=12.1 installed. If you do not have a GPU, or if you have a different version of CUDA, you may need to install the appropriate version of PyTorch manually.
+WARNING1: Using `requirements.txt` assumes you have a CUDA-compatible GPU with CUDA>=12.1 installed. If you do not have a GPU, or if you have a different version of CUDA, you may need to install the appropriate version of PyTorch manually.
+
+WARNING2: The `requirements.txt` file has been generated on windows platform. If you are using a different platform, you need to manually install the required packages.
 
 ## Usage
 
-At this time, \textsc{Scoop} has only been implemented in PyTorch. To use \textsc{Scoop}, one needs to import \texttt{scoop.py} in his project:
+At this time, SCoop has only been implemented in PyTorch. To use Scoop, one needs to import `scoop` in his project:
 
 ```python
     from scoop import Scoop
 ```
 
-\texttt{Scoop} is a class that inherits from \texttt{torch.optim.Optimizer}. Hence, one can use it as any other optimizer in PyTorch, we detail its hyperparameters later. The main difference with standard optimizer is that \textsc{Scoop} relies on a Hessian estimator. Hence, \texttt{Scoop} has a \texttt{hutchinson\_hessian} method that update the Hessian estimation in-place. The entire training loop is then:
+`Scoop` is a class that inherits from `torch.optim.Optimizer`. Hence, one can use it as any other optimizer in PyTorch, we detail its hyperparameters later. The main difference with standard optimizer is that Scoop relies on a Hessian estimator. Hence, `Scoop` has a `hutchinson\_hessian` method that update the Hessian estimation in-place. The entire training loop is then:
 
 The main contribution is located in `src/scoop.py`. To use Scoop, create an instance of the `Scoop` class as you would do with any other optimizer:
 
