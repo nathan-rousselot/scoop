@@ -64,6 +64,8 @@ While default values are given, we suggest adding those hyperparameters to the f
 
 You can explore the different notebooks in this repository for more detailed examples and additional figures.
 
+**Pre-trained model**: The pre-trained model is heavy (>900MB) and is not included in this repository. You can download it from [here](https://drive.google.com/file/d/1zi_UcvCEBv2KH0-IZ9E_OxSBLkUAOGln/view?usp=sharing), which is an anonymous google drive link.
+
 ## Citation
 
 If you use Scoop, or this code, in your research please cite the following paper:
