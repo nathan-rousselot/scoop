@@ -1,5 +1,5 @@
 # Scoop: An Optimization Algorithm for Profiling Attacks against Higher-Order Masking
-Authors: Anonymized
+Authors: Nathan Rousselot, Karine Heydemann, Loïc Masure and Vincent Migairou
 
 This repository contains the implementation of the Scoop algorithm for profiling attacks against higher-order masking, as well as supplementary materials for additional figures and reproducing the results of the paper.
 
