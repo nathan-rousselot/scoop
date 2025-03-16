@@ -29,7 +29,7 @@
 
 If you are using this code, please cite the aforementioned paper in your work.
 
-Author: Anonymous
+Author: Nathan Rousselot
 Date: [2025-01-13]
 Version: 1.0
 ####################################################################################################
@@ -93,7 +93,7 @@ def process_cumulated_loss(i, losses, s, L0arr, L1arr):
     loss = loss.subs(L0, L0arr[i])
     return simplify(loss.subs(L1, L1arr[i]))
 
-with Parallel(n_jobs=n_jobs) as parallel: # Use all available cores, prefer threads for symbolic calculations
+with Parallel(n_jobs=n_jobs) as parallel:
     cumulated_loss_list = parallel(delayed(process_cumulated_loss)(i, losses, s, L0arr, L1arr) for i in tqdm(range(n_traces), desc='Computing cumulated loss'))
 
 cumulated_loss = np.sum(cumulated_loss_list) / n_traces
