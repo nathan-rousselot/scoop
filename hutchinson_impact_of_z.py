@@ -20,7 +20,7 @@ Key Features:
 This code is part of the paper: 
 "Scoop: An Optimization Algorithm for Profiling Attacks against Higher-Order Masking"
 
-Author: Anonymous
+Author: Nathan Rousselot
 Date: 2025-01-14
 Version: 1.0
 ===============================================================================

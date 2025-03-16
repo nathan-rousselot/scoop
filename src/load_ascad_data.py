@@ -4,7 +4,7 @@ File: load_ascad_data.py
 Automatic loading of the ASCADv1 dataset. From: 
 Scoop: An Optimization Algorithm for Profiling Attacks against Higher-Order Masking.
 
-Author: Anonymous
+Author: Nathan Rousselot
 Date: 2025-01-13
 Version: 1.0
 """

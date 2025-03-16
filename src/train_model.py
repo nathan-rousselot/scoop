@@ -7,7 +7,7 @@ Scoop: An Optimization Algorithm for Profiling Attacks against Higher-Order Mask
 
 WARNING: will not work with other optimizers. Comment out lines 58/59 to use with other optimizers.
 
-Author: Anonymous
+Author: Nathan Rousselot
 Date: 2025-01-13
 Version: 1.0
 """

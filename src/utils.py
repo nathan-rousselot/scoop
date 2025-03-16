@@ -4,7 +4,7 @@ File: utils.py
 Import of utils dependencies, such as labels construction. From: 
 Scoop: An Optimization Algorithm for Profiling Attacks against Higher-Order Masking.
 
-Author: Anonymous
+Author: Nathan Rousselot
 Date: 2025-01-13
 Version: 1.0
 """

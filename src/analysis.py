@@ -29,7 +29,7 @@ Key Functionalities:
 
 If you are using this code, please cite the aforementioned paper in your work.
 
-Author: Anonymous
+Author: Nathan Rousselot
 Date: [2025-01-13]
 Version: 1.0
 """

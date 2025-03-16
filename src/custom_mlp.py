@@ -4,7 +4,7 @@ File: custom_mlp.py
 Customized MLP model for hyperparameter search. From:
 Scoop: An Optimization Algorithm for Profiling Attacks against Higher-Order Masking.
 
-Author: Anonymous
+Author: Nathan Rousselot
 Date: 2025-01-13
 Version: 1.0
 """

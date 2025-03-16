@@ -8,7 +8,7 @@ See appendix G for general guidelines on how to use Scoop.
 
 Forked from Sophia Optimizer: Liu et al.
 
-Author: Anonymous
+Author: Nathan Rousselot
 Date: 2025-01-13
 Version: 1.0
 """
