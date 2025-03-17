@@ -71,5 +71,11 @@ You can explore the different notebooks in this repository for more detailed exa
 If you use Scoop, or this code, in your research please cite the following paper:
 
 ```bibtex
-TBD --> anonymized
+@misc{cryptoeprint:2025/498,
+      author = {Nathan Rousselot and Karine Heydemann and Loïc Masure and Vincent Migairou},
+      title = {Scoop: An Optimizer for Profiling Attacks against Higher-Order Masking},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2025/498},
+      year = {2025},
+      url = {https://eprint.iacr.org/2025/498}
+}
 ```
